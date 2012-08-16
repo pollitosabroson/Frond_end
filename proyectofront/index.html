@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "es"><head>
+<title>Sesiones</title>
+<meta charset="UTF-8">
+<meta name="description" content="" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript" src="js/prettify.js"></script>                                   <!-- PRETTIFY -->
+<script type="text/javascript" src="js/kickstart.js"></script>                                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />                          <!-- CUSTOM STYLES -->
+</head>
+<body>
+	<section id = "head">
+		<!-- div for imgagen-->
+		<div class ="logo">
+			<img src="img/logotribugeek.jpg" alt = "Logo"  height ="150" width ="200" />
+
+		</div>
+					<!-- titulo-->
+			<h1>Login</h1>
+	</section>
+	<section id = "center">
+		<div style="height:170px;">
+		<div class="boxUniversal">
+			<div class="boxlogin">Usuarios</div><br />
+			<div align="center">Ingresar en su Cuenta. <br /></div><br />
+
+			<div style="width:150px">
+				<form  action="user/principal.html"method="post"  autocomplete="on">
+					<!-- Email -->
+					<div id="correo_msg" class="text_warning gray" style="clear:none; width:120px;text-align:left;">Usuario:*</div>
+					<input class="form_index" name="correo" id="correo" maxlength="40" type="text" required="required" placeholder = "Nombre de Usuario"/>
+					<!-- Contraseña -->
+					<div id="password_msg" class="text_warning gray" style="clear: none; width:140px;text-align:left">Contrase&ntilde;a:*</div>
+
+					<input class="form_index" name="password" id="password" maxlength="20" type="password"  required="required"placeholder="*********"/><br /><br />
+					<button class="blue" type="submit" values="login">Login</button>
+				</form>
+				
+			</div><br />
+		</div>
+	</div>
+	</section>
+	<footer></footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head>
+<title>Pagina de inico</title>
+<meta charset="UTF-8">
+<meta name="description" content="" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript" src="../js/prettify.js"></script>                                   <!-- PRETTIFY -->
+<script type="text/javascript" src="../js/kickstart.js"></script>                                  <!-- KICKSTART -->
+<script type="text/javascript" src="../js/ajax.js"></script>
+								<!--actualizar div-->
+<link rel="stylesheet" type="text/css" href="../css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+
+</head>
+<body>
+	<section>
+	<!-- Menu princiapl -->
+	<ul class="menu">
+		<li class="current"><a href=""><span class="icon" data-icon="K"></span>Agregar Usuario</a>
+	<ul>
+		<li><a href="javascript:ajaxpage('newUser.html', 'contenedor');"><span class="icon blue" data-icon="K"></span>Agregar Usuarios</a>
+
+		</li>
+	</ul>
+</li>
+
+		<li><a href=""><span class="icon medium gray" data-icon="u"></span>Usuarios</a>
+			<ul>
+				<li><a href="javascript:ajaxpage('deleteUser.html','contenedor')"><span class="icon medium blue" data-icon="T"></span>Eliminar Usuarios</a>
+				</li>
+				<li><a href="javascript:ajaxpage('editUser.html','contenedor')"><span class="icon medium blue" data-icon="7"></span>Editar Usuarios</a>
+				</li>
+			</ul>
+		</li>
+		<li><a href="javascript:ajaxpage('changePass.html','contenedor')"><span class="icon medium gray" data-icon="Z"></span>Cambiar ContraseÃ±as</a>
+		</li>
+		<li><a href="../"><span class="icon medium gray" data-icon="O"></span>Cerrar sesion</a></li>
+</ul>
+</section>
+	<section class="contenedorCuerpo" id="contenedor">
+	</section>
+</body>
+</html>

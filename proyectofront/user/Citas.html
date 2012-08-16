@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Citas Programadas</title>
+<meta charset="UTF-8">
+<meta name="description" content="" />
+<script type="text/javascript">
+	function texto()
+	{
+		alert('El reporte aun no lo pongo porque requiero obtener los datos de la base de datos ');
+	}
+	</script>
+
+                          <!-- Calendario-->
+<link type="text/css" rel="stylesheet" href="dhtmlgoodies_calendar/dhtmlgoodies_calendar.css?random=20051112" media="screen"></LINK>
+	<SCRIPT type="text/javascript" src="dhtmlgoodies_calendar/dhtmlgoodies_calendar.js?random=20060118"></script>
+	
+</head>
+<body>
+	<section class="Contenido">
+		<form action="#">
+
+			<label for="name">Nombre</label>
+			<input id="name" type= "texts" required>
+			<label for ="ApPAt">Apellido Paterno</label>
+			<input id="ApPAt" type="text" required />
+			<label For="ApMat">Apellido Materno</label>
+			<input id="ApMat" type="text" ></br>
+		</br>
+			<label for ="years">Edad </label>
+			<input id="years" type="text" reuired placeholder ="Edad va numeros" required>
+			<labelfor="Estadocivil">Estado Civil</label>
+			<select id="estate" class="inline">
+				<option values="Soltero">Soltero</option>
+				<option values="Casado">Casado</option>
+				<option values="Viudo">Viudo</option>
+				<option values="Libre">Union Libre</option>
+				<option values="Divorciado">Divorciado</option>
+			</select>
+			<label for="Sex">sexo</label>
+			<select id="Sex" class="inline">
+				<option values="0">Hombre</option>
+				<option values="1">Mujer</option>
+			</select></br>
+			</br>
+			<label for="sickness">Enfermedad que presenta el paciente</label></br>
+			<input id="sickness" type=" text" required></br>
+			<label for="description">Descripcion de lo que presenta el paciente</label></br>
+			<textarea id="description" placeholder="Descripcion de lo que presenta el paciente"></textarea></br>
+			<label for="_Medi">Medicamentos</label>
+			<input  id="Medicamentos" type="text"><br /><br />
+			</br>
+			<label for="Cita">Proxima cita</label>
+			<input type="text" value="" readonly name="theDate">
+			<input type="button" class="medium" value="Calendario" onclick="displayCalendar(document.forms[0].theDate,'yyyy-mm-dd',this)"></td></tr>
+		</br>
+			<button class="blue" type="submit" values="login" onclick="texto()">  Reservar cita</button>
+		</form>
+	</section>
+
+</body>
+</html>

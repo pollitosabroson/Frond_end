@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head>
+<title>Pagina de inico</title>
+<meta charset="UTF-8">
+<meta name="description" content="" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript" src="../js/prettify.js"></script>                                   <!-- PRETTIFY -->
+<script type="text/javascript" src="../js/kickstart.js"></script>                                  <!-- KICKSTART -->
+<script type="text/javascript" src="../js/ajax.js"></script>
+								<!--actualizar div-->
+<link rel="stylesheet" type="text/css" href="../css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+<link rel="stylesheet" type="text/css" href="../css/style.css" media="all" />                          <!-- CUSTOM STYLES -->
+                         <!-- Calendario-->
+<link type="text/css" rel="stylesheet" href="dhtmlgoodies_calendar/dhtmlgoodies_calendar.css?random=20051112" media="screen"></LINK>
+	<SCRIPT type="text/javascript" src="dhtmlgoodies_calendar/dhtmlgoodies_calendar.js?random=20060118"></script>
+	<script type="text/javascript">
+	function texto()
+	{
+		alert('El reporte aun no lo pongo porque requiero obtener los datos de la base de datos ');
+	}
+	</script>
+</head>
+<body>
+	<section class = "header"></section>
+	<section class = "menuPrin">
+		<!-- Menu Horizontal -->
+	<ul class="menu">
+	<li class="current"><a href=""><span class="icon" data-icon="."></span>Citas</a>
+		<ul>
+			<li><a href="javascript:ajaxpage('Citas.html', 'contenedor');"><span class="icon" data-icon="G"></span> Citas del Día</a></li>
+		</ul>
+	</li>
+	<li><a href=""><span class="icon" data-icon="j" ></span>Indicadores</a>
+		<ul>
+			<li><a href="javascript:ajaxpage('graficas.html', 'contenedor');"><span class="icon" data-icon="k"></span> Citas</a></li>
+			<li><a href="javascript:ajaxpage('graficas.html', 'contenedor');"><span class="icon" data-icon="k"></span> Medicinas</a></li>
+			<li><a href="javascript:ajaxpage('graficas.html', 'contenedor');"><span class="icon" data-icon="k"></span>Enfermedades</a></li>
+		</ul>
+	</li>
+	<li><a href=""><span class="icon" data-icon="u"></span>Usario</a>
+		<ul>
+			<li><a href="javascript:ajaxpage('datos.html', 'contenedor');"><span class="icon" data-icon="K"></span>Datos de usuario</a></li>
+			<li><a href="javascript:ajaxpage('changePass.html','contenedor')"><span class="icon" data-icon="Z"></span>Cambiar contraseña</a></li>
+			<li><a href="../"><span class="icon" data-icon="L"></span>Cerrar Sesión</a></li>
+		</ul>
+	</li>
+	</section>
+	<section class="contenedorCuerpo" id="contenedor">
+	</section>
+	<footer></footer> 
+</body>
+</html>
